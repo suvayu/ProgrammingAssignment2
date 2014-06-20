@@ -20,7 +20,7 @@ makeCacheMatrix <- function(mat = matrix()) {
 
 cacheSolve <- function(mat, ...) {
   inv <- mat$getinv()
-  if(!is.null(i)) {
+  if(!is.null(inv)) {
     message("Using cached data")
     return(inv)
   }

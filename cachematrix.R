@@ -11,7 +11,7 @@ makeCacheMatrix <- function(mat = matrix()) {
   set <- function(value) {
     mat <<- value
     ## reset inverse, since not valid any more
-    inv <- NULL
+    inv <<- NULL
   }
   ## getter function
   get <- function() mat
